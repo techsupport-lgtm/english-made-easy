@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — English Made Easy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fdfaf5;
+      --surface: #ffffff;
+      --ink: #1a1814;
+      --ink-soft: #4a453e;
+      --ink-muted: #8a8278;
+      --accent: #2d6a4f;
+      --accent-light: #e8f4ef;
+      --accent-warm: #b5451b;
+      --border: #e8e2d8;
+      --shadow: 0 2px 16px rgba(26,24,20,0.07);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      font-weight: 400;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-family: 'Lora', serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.75;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    header .meta {
+      font-size: 14px;
+      opacity: 0.72;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── Intro banner ── */
+    .intro-banner {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin: 40px 0 36px;
+      font-size: 15.5px;
+      color: var(--ink-soft);
+      line-height: 1.65;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 44px;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .section-number {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: clamp(18px, 3vw, 22px);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink-soft);
+      margin: 24px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      color: var(--ink-soft);
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+      color: var(--ink-soft);
+      font-size: 16px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--accent-warm); }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    /* ── Address block ── */
+    .address-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-size: 15px;
+      color: var(--ink-soft);
+      line-height: 1.9;
+      margin-top: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 30px;
+      margin-top: 16px;
+    }
+
+    .contact-card p { color: rgba(255,255,255,0.85); font-size: 15.5px; }
+    .contact-card a { color: #a8dfc9; }
+    .contact-card a:hover { color: #fff; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      margin-top: 64px;
+      letter-spacing: 0.03em;
+    }
+
+    footer a { color: rgba(255,255,255,0.6); }
+
+    /* ── Main content spacing ── */
+    main {
+      padding: 12px 0 64px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 36px 20px 30px; }
+      .address-block { padding: 16px 18px; }
+      .contact-card { padding: 22px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">English Made Easy</div>
+  <h1>Privacy Policy</h1>
+  <div class="meta">Effective Date: April 28, 2026 &nbsp;·&nbsp; Last Updated: April 28, 2026</div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="intro-banner">
+      This Privacy Policy describes how <strong>Achieve Zone LLC</strong> handles information in connection with the English Made Easy mobile application (the "App"). By using the App, you agree to the practices described in this Privacy Policy.
+    </div>
+
+    <!-- 1 -->
+    <section>
+      <div class="section-number">Section 1</div>
+      <h2>About Us</h2>
+      <p>Achieve Zone LLC is a limited liability company registered in the State of Nevada, United States.</p>
+      <div class="address-block">
+        <strong>Achieve Zone LLC</strong><br />
+        7575 W. Washington Ave, Ste 127-163<br />
+        Las Vegas, NV 89128<br />
+        United States
+      </div>
+      <p style="margin-top:14px;">Privacy Contact: <a href="https://achieve.zone/contact">https://achieve.zone/contact</a></p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 2 -->
+    <section>
+      <div class="section-number">Section 2</div>
+      <h2>Information We Do Not Collect</h2>
+      <p>We want to be clear about what we do not collect:</p>
+      <ul>
+        <li>We do not require an account to use the App.</li>
+        <li>We do not ask for your name, email address, phone number, or postal address.</li>
+        <li>We do not collect or store any information you provide voluntarily, because we do not provide a way for you to provide such information through the App.</li>
+        <li>We do not access your contacts, photos, camera, microphone, or precise location (GPS).</li>
+        <li>We do not sell, rent, or trade personal information to third parties.</li>
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 3 -->
+    <section>
+      <div class="section-number">Section 3</div>
+      <h2>Information Automatically Collected by Third-Party Services</h2>
+      <p>The App uses third-party services that automatically collect certain information about your device and how you use the App. We do not control what these services collect; we use the information they make available to us to operate, improve, and monetize the App.</p>
+
+      <h3>3.1 Google Play Services</h3>
+      <p>Provided by Google LLC. Used to ensure compatibility with Android devices and to authenticate that the App is genuine.</p>
+
+      <h3>3.2 Google Analytics for Firebase</h3>
+      <p>Provided by Google LLC. Collects anonymized data about how users interact with the App, including:</p>
+      <ul>
+        <li>Device type, model, and operating system version</li>
+        <li>App version</li>
+        <li>Approximate location (derived from IP address — country/region level, not GPS)</li>
+        <li>Aggregated, anonymized usage events (such as which screens are viewed and which features are used)</li>
+        <li>A randomly generated installation identifier ("Firebase Installation ID")</li>
+      </ul>
+      <p>This information helps us understand how the App is used and improve its features. It is not linked to your personal identity.</p>
+
+      <h3>3.3 Firebase Crashlytics</h3>
+      <p>Provided by Google LLC. Automatically collects information about crashes and errors, including:</p>
+      <ul>
+        <li>Device state at the time of the crash</li>
+        <li>Operating system version</li>
+        <li>A randomly generated installation identifier</li>
+      </ul>
+      <p>This information helps us diagnose and fix bugs. It does not include your personal identity.</p>
+
+      <h3>3.4 Google AdMob</h3>
+      <p>Provided by Google LLC. Used to display advertisements within the App. AdMob may collect:</p>
+      <ul>
+        <li>Your device's advertising identifier (Android Advertising ID or Apple's IDFA)</li>
+        <li>Approximate location (derived from IP address)</li>
+        <li>Device type, operating system version, and app version</li>
+        <li>Limited interaction data with advertisements (views and clicks)</li>
+      </ul>
+      <p>You can reset or limit ad tracking at any time through your device settings:</p>
+      <ul>
+        <li><strong>Android:</strong> Settings → Privacy → Ads → Reset advertising ID / Opt out of Ads Personalization</li>
+        <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Tracking → toggle off "Allow Apps to Request to Track"</li>
+      </ul>
+      <p>For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+
+      <h3>3.5 Referral System</h3>
+      <p>The App includes a referral feature that issues each user a randomly generated nine-digit code. To make this work, our backend stores:</p>
+      <ul>
+        <li>The randomly generated nine-digit referral code</li>
+        <li>A Firebase Installation ID associated with your installation</li>
+        <li>A count of successful referrals</li>
+        <li>The reward state (whether ad-free access is active and when it expires)</li>
+      </ul>
+      <p>The referral system does not store your name, email address, phone number, contact list, location, or any other personally identifying information. If you uninstall the App, the Installation ID is regenerated when you reinstall, and any unredeemed rewards will not carry over.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 4 -->
+    <section>
+      <div class="section-number">Section 4</div>
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>Operate and maintain the App</li>
+        <li>Display advertisements that fund the App's free availability</li>
+        <li>Diagnose technical issues and improve performance</li>
+        <li>Understand how users engage with the App so we can improve it</li>
+        <li>Enforce our Terms and Conditions and protect against misuse</li>
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 5 -->
+    <section>
+      <div class="section-number">Section 5</div>
+      <h2>Sharing of Information</h2>
+      <p>We do not sell your personal information. We share information only with:</p>
+      <ul>
+        <li><strong>Service providers</strong> named in Section 3 (Google LLC), who process information according to their own privacy policies.</li>
+        <li><strong>Authorities</strong>, when legally required — for example, in response to a lawful subpoena or court order.</li>
+        <li><strong>Successors in interest</strong> — if Achieve Zone LLC is acquired, merged, or sold, information may transfer to the acquiring entity, subject to this Privacy Policy.</li>
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 6 -->
+    <section>
+      <div class="section-number">Section 6</div>
+      <h2>Children's Privacy</h2>
+      <p>The App is intended for general audiences and is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the App in a way that resulted in collection of personal information, please <a href="https://achieve.zone/contact">contact us</a> and we will take appropriate steps.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 7 -->
+    <section>
+      <div class="section-number">Section 7</div>
+      <h2>Your Rights</h2>
+
+      <h3>7.1 Rights Under California Law (CCPA / CPRA)</h3>
+      <p>If you are a California resident, you have the right to:</p>
+      <ul>
+        <li>Know what personal information we collect, use, and share</li>
+        <li>Request deletion of personal information we hold about you</li>
+        <li>Opt out of the sale or sharing of personal information</li>
+        <li>Non-discrimination for exercising any of these rights</li>
+      </ul>
+
+      <h3>7.2 Rights Under European Law (GDPR)</h3>
+      <p>If you are located in the EEA, UK, or Switzerland, you have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your data</li>
+        <li>Object to or restrict certain processing</li>
+        <li>Data portability</li>
+        <li>Lodge a complaint with your local data protection authority</li>
+      </ul>
+      <p>The legal basis for our processing is your consent (which you may withdraw at any time by uninstalling the App and resetting your device's advertising identifier) and our legitimate interest in operating and improving the App.</p>
+
+      <h3>7.3 California Online Privacy Protection Act (CalOPPA)</h3>
+      <p>We do not track users across third-party websites and therefore do not respond to "Do Not Track" browser signals.</p>
+
+      <p>To exercise any of these rights, contact us at <a href="https://achieve.zone/contact">https://achieve.zone/contact</a>.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 8 -->
+    <section>
+      <div class="section-number">Section 8</div>
+      <h2>Data Retention</h2>
+      <ul>
+        <li>Anonymized analytics data is retained by Google for up to 14 months by default.</li>
+        <li>Crash reports are retained by Crashlytics for up to 90 days by default.</li>
+        <li>Advertising data is retained by Google AdMob according to Google's policies.</li>
+        <li>Referral data is stored for as long as the App remains installed and active. Orphaned records may be periodically purged.</li>
+      </ul>
+      <p>We do not maintain a user database that links to your real-world identity.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 9 -->
+    <section>
+      <div class="section-number">Section 9</div>
+      <h2>International Data Transfers</h2>
+      <p>The App is operated from the United States. If you use the App from outside the United States, the information collected by our service providers may be transferred to, stored in, and processed in the United States or any other country where our service providers operate. By using the App, you consent to these transfers.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 10 -->
+    <section>
+      <div class="section-number">Section 10</div>
+      <h2>Security</h2>
+      <p>We rely on the security practices of our service providers (Google LLC) to protect the information collected through the App. No method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 11 -->
+    <section>
+      <div class="section-number">Section 11</div>
+      <h2>Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top of this page reflects the most recent changes. Material changes will be communicated through the App or on our website. Your continued use of the App after changes are posted constitutes acceptance of the updated Privacy Policy.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 12 -->
+    <section>
+      <div class="section-number">Section 12</div>
+      <h2>Governing Law</h2>
+      <p>This Privacy Policy is governed by the laws of the State of Nevada, United States, without regard to its conflict of laws principles.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 13 -->
+    <section>
+      <div class="section-number">Section 13</div>
+      <h2>Contact Us</h2>
+      <p>For questions about this Privacy Policy or to exercise any rights described above:</p>
+      <div class="contact-card">
+        <p><strong style="color:#fff;">Achieve Zone LLC</strong></p>
+        <p>7575 W. Washington Ave, Ste 127-163<br />Las Vegas, NV 89128, United States</p>
+        <p style="margin-top:12px;"><a href="https://achieve.zone/contact">https://achieve.zone/contact</a></p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Achieve Zone LLC. All rights reserved.<br />
+    <a href="terms.html">Terms &amp; Conditions</a>
+  </div>
+</footer>
+
+</body>
+</html>
